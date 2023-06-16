@@ -20,7 +20,8 @@
             android:text="Code Name"
             android:textSize="22sp"
             android:padding="16dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
