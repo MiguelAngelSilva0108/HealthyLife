@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itPerfil"
+        android:title="Perfil"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_person_24" />
+    <item
+        android:id="@+id/itDietas"
+        android:title="Dietas"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_food_bank_24" />
+    <item
+        android:id="@+id/itInicio"
+        android:title="Inicio"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_home_24" />
+    <item
+        android:id="@+id/itCalorias"
+        android:title="Calorías"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_flatware_24" />
+
+    <item
+        android:id="@+id/itRutinas"
+        android:title="Rutinas"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_fitness_center_24" />
+
+</menu>
+

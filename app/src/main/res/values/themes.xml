@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HealthyLife" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#03C988</item>
+        <item name="android:navigationBarColor">#F9F5F6</item>
+
+    </style>
+
+    <style name="Theme.HealthyLife" parent="Base.Theme.HealthyLife" />
+</resources>

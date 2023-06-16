@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="20dp" /> <!-- Ajusta el valor del radio según tus preferencias -->
+        <solid android:color="#FFFFFF" /> <!-- Cambia el color de fondo según tus preferencias -->
+    </shape>
+
+</selector>

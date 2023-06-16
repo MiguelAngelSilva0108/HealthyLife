@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tvImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Inicio de sesión" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="Bienvenido, comienza tu cambio"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:lineSpacingExtra="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/green_border"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/passwordRequirementsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6-10 caracteres, mayúscula, carácter especial y número"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/green_border"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_confirm"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/green_border"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:text="¡Regístrame!"
+                android:textSize="18sp"
+                android:background="@drawable/orange_border" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:padding="8dp"
+                    android:text="¿Ya tienes una cuenta?"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/loginRedirectText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:padding="8dp"
+                    android:text="Inicia Sesión"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
