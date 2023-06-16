@@ -5,15 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="2dp"
     app:cardElevation="3dp"
-    app:cardUseCompatPadding="true"
-    >
+    app:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linear_layout"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -22,14 +20,12 @@
             android:text="Code Name"
             android:textSize="22sp"
             android:padding="16dp"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/expandable_layout"
-            >
+            android:id="@+id/expandable_layout">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -39,8 +35,7 @@
                 android:padding="16dp"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/grey"
-                />
+                android:textColor="@color/grey" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -52,8 +47,7 @@
                 android:textStyle="bold"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/grey"
-                android:layout_alignParentEnd="true"
-                />
+                android:layout_alignParentEnd="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -63,14 +57,75 @@
                 android:padding="16dp"
                 android:textSize="18sp"
                 android:layout_below="@+id/version"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_below="@id/description"
+                android:layout_marginTop="16dp"
+                android:foreground="?selectableItemBackground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/version2"
+                android:text="Version"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:textColor="@color/grey"
-                />
+                android:layout_below="@id/image"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:layout_alignWithParentIfMissing="true" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/api_level2"
+                android:text="Api Level"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/grey"
+                android:layout_below="@id/image"
+                android:layout_marginTop="16dp"
+                android:layout_alignWithParentIfMissing="true" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description2"
+                android:text="Description TextView"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:layout_below="@id/version2"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:layout_alignWithParentIfMissing="true" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_below="@id/description2"
+                android:layout_marginTop="16dp"
+                android:foreground="?selectableItemBackground"
+                android:layout_alignWithParentIfMissing="true" />
         </RelativeLayout>
-
-
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>
