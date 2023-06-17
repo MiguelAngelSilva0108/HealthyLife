@@ -22,7 +22,7 @@
         android:layout_below="@+id/tvTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:inputType="number"
+        android:inputType="numberSigned"
         android:textColor="@color/black"
         android:background="@drawable/green_border"/>
 
