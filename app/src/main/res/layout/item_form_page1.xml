@@ -14,11 +14,27 @@
         android:textSize="30sp" />
 
     <Button
+        android:id="@+id/PerderPeso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvTitle"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/orange_border"
+        android:text="Perder Peso"
+        />
+    <Button
+        android:id="@+id/GanarPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PerderPeso"
         android:layout_marginTop="30dp"
-        android:text="Mi botón" />
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/orange_border"
+        android:text="Ganar peso"
+        />
 
 </RelativeLayout>
 

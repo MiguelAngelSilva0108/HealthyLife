@@ -6,25 +6,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="8dp"
-    tools:context="com.fpt.fragment.FragmentInicio">
+    tools:context="com.fpt.fragment.FragmentDietas">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Title Text"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="About Topic"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/tvImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        android:src="@mipmap/ic_launcher_round"
+        android:contentDescription="Descripción de la imagen"/>
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_marginBottom="100dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/recyclerView"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:ignore="MissingClass" />
-
-    </LinearLayout>
-
-
+        android:id="@+id/recyclerView"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:ignore="MissingClass" />
 
 </LinearLayout>
