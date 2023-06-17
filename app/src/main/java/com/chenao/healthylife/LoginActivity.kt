@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import com.chenao.healthylife.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import android.util.Patterns
+import android.view.View
 
 class LoginActivity : AppCompatActivity() {
 
@@ -50,9 +51,11 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish() // Opcionalmente, puedes finalizar la actividad actual para que no se pueda volver a la pantalla de inicio de sesión presionando el botón "Atrás".
                 } else {
-                    val errorText = "Correo o contraseña incorrectos, intente de nuevo"
+                    val errorText = "Correo o contraseña incorrectos"
                     binding.errorTextView.text = errorText
                     binding.errorTextView.setTextColor(Color.RED)
+                    binding.loginPassword.text.clear()
+                    binding.forgotPassword.visibility = View.VISIBLE
                 }
             }
         }

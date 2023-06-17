@@ -2,15 +2,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.fpt.fragment.FragmentInicio">
+    android:orientation="vertical"
+    tools:context="com.fpt.fragment.FragmentPerfil">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:text="FRAGMENT PERFIL" />
+    <!-- TextView para mostrar el correo del usuario -->
+<TextView
+android:layout_width="match_parent"
+android:id="@+id/correousuario"
+android:layout_height="wrap_content"
+android:textColor="@color/black"
+android:gravity="center"
+android:textSize="20sp" />
 
-</LinearLayout>
+    <!-- Botón para cerrar sesión -->
+<Button
+android:id="@+id/signOutButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Cerrar Sesión" />
+
+    </LinearLayout>
+

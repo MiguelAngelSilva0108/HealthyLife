@@ -104,7 +104,8 @@
                     android:padding="8dp"
                     android:text="Olvidé mi contraseña"
                     android:textColor="@color/blue"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:visibility="gone" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
