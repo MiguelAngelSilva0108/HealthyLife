@@ -78,7 +78,7 @@ public class FragmentRutinas extends Fragment {
                         "• Segundo set:\n" +
                         "   - Sentadilla profunda x 12 reps x 4 series\n" +
                         "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.pierna,
-                "texto", "texto", "• Realiza un breve calentamiento con peso muerto por 3 series de 40 repeticiones, ligeras.\n\n" +
+                "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con peso muerto por 3 series de 40 repeticiones, ligeras.\n\n" +
                 "• Primer set:\n" +
                 "   - Peso muerto olímpico 10 reps x 4 series\n" +
                 "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
@@ -86,15 +86,90 @@ public class FragmentRutinas extends Fragment {
                 "   - Sentadilla profunda x 12 reps x 4 series\n" +
                 "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.cuadricep));
 
-        versionsList.add(new Versions("Brazo", "1", "1.0", "Primer set: Curl de bíceps barra Z 15rep x 4 series, curl barra romana, Segundo set: Curl araña más curl invertido 15rep x 4 series",
-                R.drawable.cuadricep, "", "", "", R.drawable.cuadricep));
-        versionsList.add(new Versions("Pecho", "1", "1.0", "Primer set: Press con mancuerna en banco horizontal 15rep x 4 series más press máquina más pull over 15reps x 4 series, Segundo set: Press inclinado usando mancuernas 15reps x 4 series, Cristos banco plano 15reps x 4 series",
-                R.drawable.cuadricep, "", "", "", R.drawable.cuadricep));
-        versionsList.add(new Versions("Espalda", "1", "1.0", "Jalon al frente abierto más remo mancuerna 15reps x 4 series, Remo con barra más jalón individual polea alta 15reps x 4 series, Hiper-extensión más dominadas al fallo",
-                R.drawable.cuadricep, "", "", "", R.drawable.cuadricep));
-        versionsList.add(new Versions("Hombro", "1", "1.0", "Press de hombro con barra más laterales con mancuerna 15reps x 4 series, Press con mancuerna con pájaros acostado más a una mano con mancuernas (pajaro) 15reps x 4 series, Press a una mano de pie más frontal con mancuerna 15reps x 4 series",
-                R.drawable.cuadricep, "", "", "", R.drawable.cuadricep));
-        versionsList.add(new Versions("Tricep", "1", "1.0", "Extensión con barra polea alta más copa a dos manos con mancuernas separadas, Press francés prexhaustivo (de 1 a 5 más 5 dobles) más patadas de trícep",
-                R.drawable.cuadricep, "", "", "", R.drawable.cuadricep));
+        //bicep
+     versionsList.add(new Versions("Bicep", "Primer entrenamiento", "Principiantes",
+                "• Realiza un breve calentamiento con curl de biceps por 3 series de 40 repeticiones, ligeras.\n\n" +
+                        "• Primer set:\n" +
+                        "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                        "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                        "• Segundo set:\n" +
+                        "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                        "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.pierna,
+                "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con curl de biceps por 3 series de 40 repeticiones, ligeras.\n\n" +
+                "• Primer set:\n" +
+                "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                "• Segundo set:\n" +
+                "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.cuadricep));
+
+        //pecho
+    versionsList.add(new Versions("Pecho", "Primer entrenamiento", "Principiantes",
+                "• Realiza un breve calentamiento con pesos ligeros, y movientos para hombro.\n\n" +
+                        "• Primer set:\n" +
+                        "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                        "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                        "• Segundo set:\n" +
+                        "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                        "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.pierna,
+                "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con pesos ligeros, y movimientos para hombro.\n\n" +
+                "• Primer set:\n" +
+                "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                "• Segundo set:\n" +
+                "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.cuadricep));
+
+        //espalda
+        versionsList.add(new Versions("Espalda", "Primer entrenamiento", "Principiantes",
+                "• Realiza un breve calentamiento con peso muerto y remos, ligero.\n\n" +
+                        "• Primer set:\n" +
+                        "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                        "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                        "• Segundo set:\n" +
+                        "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                        "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.pierna,
+                "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con peso muerto y remos, ligero.\n\n" +
+                "• Primer set:\n" +
+                "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                "• Segundo set:\n" +
+                "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.cuadricep));
+
+        //hombro
+  versionsList.add(new Versions("Pierna", "Primer entrenamiento", "Principiantes",
+                "• Realiza un breve calentamiento con press de hombro y pajaros, ligero.\n\n" +
+                        "• Primer set:\n" +
+                        "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                        "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                        "• Segundo set:\n" +
+                        "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                        "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.pierna,
+                "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con press de hombro y pajaros, ligero.\n\n" +
+                "• Primer set:\n" +
+                "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                "• Segundo set:\n" +
+                "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.cuadricep));
+
+        //tricep
+       versionsList.add(new Versions("Tricep", "Primer entrenamiento", "Principiantes",
+                "• Realiza un breve calentamiento con cuerda y press de hombro.\n\n" +
+                        "• Primer set:\n" +
+                        "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                        "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                        "• Segundo set:\n" +
+                        "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                        "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.pierna,
+                "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con cuerda y pressde hombro.\n\n" +
+                "• Primer set:\n" +
+                "   - Peso muerto olímpico 10 reps x 4 series\n" +
+                "   - Peso muerto a una pierna con mancuerna 20reps x 4 series\n\n" +
+                "• Segundo set:\n" +
+                "   - Sentadilla profunda x 12 reps x 4 series\n" +
+                "   - Prensa pies arriba juntos 15 reps x 4 series", R.drawable.cuadricep));
+
     }
 }
