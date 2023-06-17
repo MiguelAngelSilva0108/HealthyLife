@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="¿Cuál es su sexo?"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+
+    <ImageButton
+        android:id="@+id/Mujer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginHorizontal="170dp"
+        android:src="@drawable/baseline_woman_24"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mujer"
+        android:text="Mujer"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/green_bordersolid"
+        android:layout_marginHorizontal="170dp"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/Hombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Mujer"
+        android:layout_marginHorizontal="170dp"
+        android:src="@drawable/baseline_man_24"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hombre"
+        android:text="Hombre"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/green_bordersolid"
+        android:layout_marginHorizontal="170dp"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

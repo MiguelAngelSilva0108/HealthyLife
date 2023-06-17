@@ -20,6 +20,8 @@ class FormActivity : AppCompatActivity() {
         // Agrega los diseños de formulario a la lista
         formList.add(R.layout.item_form_page) // Reemplaza con el nombre del archivo XML para la página 1 del formulario
         formList.add(R.layout.item_form_page1)
+        formList.add(R.layout.item_form_page2)
+        formList.add(R.layout.item_form_page3)
         // Agrega más páginas de formulario según tus necesidades
 
         viewPager.adapter = FormPagerAdapter(formList)
