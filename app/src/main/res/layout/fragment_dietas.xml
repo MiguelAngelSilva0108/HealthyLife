@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Title Text"
+        android:text="Dietas"
         android:textColor="#000000"
         android:textSize="32sp"
         android:gravity="center"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="About Topic"
+        android:text="Las dietas desempeñan un papel fundamental, una dieta equilibrada y adecuada puede ser la clave para mejorar la salud, alcanzar un peso saludable y aumentar la energía. Estas dietas son recomendadas por nutriólogos especializados del IPN"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textAlignment="center"/>
