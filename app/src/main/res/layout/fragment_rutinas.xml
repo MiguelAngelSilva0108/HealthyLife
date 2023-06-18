@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Title Text"
+        android:text="RUTINAS"
         android:textColor="#000000"
         android:textSize="32sp"
         android:gravity="center"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="About Topic"
+        android:text="Aquí encontrarás rutinas elaboradas y evaluadas por entrenadores profesionales, sin duda te servirán de gran ayuda"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textAlignment="center"/>
@@ -40,7 +40,7 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?selectableItemBackground"
-        android:src="@mipmap/ic_launcher_round"
+        android:src="@drawable/logo"
         android:contentDescription="Descripción de la imagen"
         android:layout_marginBottom="30dp"/>
 
