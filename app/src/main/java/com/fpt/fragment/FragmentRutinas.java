@@ -128,7 +128,7 @@ public class FragmentRutinas extends Fragment {
                         "   - Remo con barra más triángulo 15 reps\n\n" +
                         "• Segundo set:\n" +
                         "   - Remo sentado 15 reps\n" +
-                        "   - Remo T con barra 15 reps", R.drawable.Espalda,
+                        "   - Remo T con barra 15 reps", R.drawable.espalda,
                 "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con peso muerto y remos, ligero.\n\n" +
                 "• Primer set:\n" +
                 "   - Remo con mancuerna 20 reps \n" +

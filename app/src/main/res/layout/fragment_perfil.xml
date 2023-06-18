@@ -6,20 +6,80 @@
     tools:context="com.fpt.fragment.FragmentPerfil">
 
     <!-- TextView para mostrar el correo del usuario -->
-<TextView
-android:layout_width="match_parent"
-android:id="@+id/correousuario"
-android:layout_height="wrap_content"
-android:textColor="@color/black"
-android:gravity="center"
-android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido, "
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/bienvenidoTextView"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correousuario"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Objetivo"
+        android:layout_marginStart="47dp"
+        android:textSize="13sp"
+        android:textColor="@color/grey"
+        android:layout_gravity="left" />
+    <Spinner
+        android:id="@+id/spinnerOpciones"
+        android:layout_width="300dp"
+        android:layout_marginStart="45dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="left"
+        android:background="@drawable/black_border"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/Peso"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvAbout"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberSigned"
+        android:background="@drawable/green_border"/>
 
     <!-- Botón para cerrar sesión -->
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="100dp"
+        android:text="Modificar Datos"
+        android:background="@drawable/green_bordersolid"/>
 <Button
 android:id="@+id/signOutButton"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
-android:text="Cerrar Sesión" />
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="100dp"
+android:text="Cerrar Sesión"
+    android:background="@drawable/orange_border"/>
+
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="100dp"
+        android:text="Eliminar Cuenta"
+        android:background="@color/red"/>
 
     </LinearLayout>
 

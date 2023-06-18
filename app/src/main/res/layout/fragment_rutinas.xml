@@ -41,7 +41,8 @@
         android:focusable="true"
         android:foreground="?selectableItemBackground"
         android:src="@mipmap/ic_launcher_round"
-        android:contentDescription="Descripción de la imagen"/>
+        android:contentDescription="Descripción de la imagen"
+        android:layout_marginBottom="30dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -49,6 +50,7 @@
         android:layout_weight="1"
         android:id="@+id/recyclerView"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:ignore="MissingClass" />
+        tools:ignore="MissingClass"
+        android:layout_marginBottom="50dp"/>
 
 </LinearLayout>
