@@ -94,14 +94,14 @@ public class FragmentRutinas extends Fragment {
                         "   - Curl barra romana 15 reps\n\n" +
                         "• Segundo set:\n" +
                         "   - Curl araña 15 reps\n" +
-                        "   - Curl invertido 15 reps", R.drawable.pierna,
+                        "   - Curl invertido 15 reps", R.drawable.bicep,
                 "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con curl de biceps por 3 series de 40 repeticiones, ligeras.\n\n" +
                 "• Primer set:\n" +
                 "   - Curl de bíceps 15 reps" +
                 "   - Martillos 15 reps \n\n" +
                 "• Segundo set:\n" +
                 "   - Curl máquina 15 reps\n" +
-                "   - Curl invertido 15 reps", R.drawable.cuadricep));
+                "   - Curl invertido 15 reps", R.drawable.bicep));
 
         //pecho
     versionsList.add(new Versions("Pecho", "Primer entrenamiento", "Principiantes",
@@ -111,14 +111,14 @@ public class FragmentRutinas extends Fragment {
                         "   - Press barra horizontal 15 reps\n\n" +
                         "• Segundo set:\n" +
                         "   - Cross Over 25 reps\n" +
-                        "   - Pull Over 15 reps", R.drawable.pierna,
+                        "   - Pull Over 15 reps", R.drawable.peck,
                 "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con pesos ligeros, y movimientos para hombro.\n\n" +
                 "• Primer set:\n" +
                 "   - Press con barra en banco horizontal 15 reps\n" +
                 "   - Cross Over pirámide estática (15-12-8 reps)\n\n" +
                 "• Segundo set:\n" +
                 "   - Press inclinado con mancuerna 15 reps\n" +
-                "   - Press plano con mancuernas más pull over 15 reps.", R.drawable.cuadricep));
+                "   - Press plano con mancuernas más pull over 15 reps.", R.drawable.pecho));
 
         //espalda
         versionsList.add(new Versions("Espalda", "Primer entrenamiento", "Principiantes",
@@ -128,14 +128,14 @@ public class FragmentRutinas extends Fragment {
                         "   - Remo con barra más triángulo 15 reps\n\n" +
                         "• Segundo set:\n" +
                         "   - Remo sentado 15 reps\n" +
-                        "   - Remo T con barra 15 reps", R.drawable.pierna,
+                        "   - Remo T con barra 15 reps", R.drawable.Espalda,
                 "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con peso muerto y remos, ligero.\n\n" +
                 "• Primer set:\n" +
                 "   - Remo con mancuerna 20 reps \n" +
                 "   - Jalón abierto más jalón cerrado 15 reps\n\n" +
                 "• Segundo set:\n" +
                 "   - Holándes 15 reps\n" +
-                "   - Híperextensión para espalda baja 25 reps", R.drawable.cuadricep));
+                "   - Híperextensión para espalda baja 25 reps", R.drawable.atras));
 
         //hombro
   versionsList.add(new Versions("Pierna", "Primer entrenamiento", "Principiantes",
@@ -145,14 +145,14 @@ public class FragmentRutinas extends Fragment {
                         "   - Laterales con mancuerna 15 reps \n\n" +
                         "• Segundo set:\n" +
                         "   - Press mancuerna cerrado sentado 15 reps\n" +
-                        "   - Pájaros 12-15 reps", R.drawable.pierna,
+                        "   - Pájaros 12-15 reps", R.drawable.hombro,
                 "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con press de hombro y pajaros, ligero.\n\n" +
                 "• Primer set:\n" +
                 "   - Press de hombro mancuernas tres posiciones (press Arnold+press frontal+press normal sin bajar las mancuernas)\n" +
                 "   - Pájaros 15 reps\n\n" +
                 "• Segundo set:\n" +
                 "   - Frontal con laterales 5-5 (repeticiones de una a 5 en orden ascendente)\n" +
-                "   - Lateral inclinado a una mano 15 reps", R.drawable.cuadricep));
+                "   - Lateral inclinado a una mano 15 reps", R.drawable.hmb));
 
         //tricep
        versionsList.add(new Versions("Tricep", "Primer entrenamiento", "Principiantes",
@@ -162,14 +162,14 @@ public class FragmentRutinas extends Fragment {
                         "   - Press francés a una mano individual prexaustivo 15 reps\n\n" +
                         "• Segundo set:\n" +
                         "   - Copa a dos manos 15 reps\n" +
-                        "   - Patada de tríces en polea 15 reps", R.drawable.pierna,
+                        "   - Patada de tríces en polea 15 reps", R.drawable.triceps,
                 "Segunda rutina", "Intermedio", "• Realiza un breve calentamiento con cuerda y pressde hombro.\n\n" +
                 "• Primer set:\n" +
                 "   - Francés en pirámide estática (15-12-10-5 reps)\n" +
                 "   - más extensión con cuerda 15 reps\n\n" +
                 "• Segundo set:\n" +
                 "   - Copa a una mano 15 reps\n" +
-                "   - Press francés mancuerna más polea con agarre invertido 15 reps ", R.drawable.cuadricep));
+                "   - Press francés mancuerna más polea con agarre invertido 15 reps ", R.drawable.tri));
 
     }
 }
