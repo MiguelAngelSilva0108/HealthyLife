@@ -35,7 +35,6 @@ public class HomePage extends AppCompatActivity {
         fragmentArrayList.add(new FragmentInicio());
         fragmentArrayList.add(new FragmentPerfil());
         fragmentArrayList.add(new FragmentDietas()); // Cambiado el orden, ahora FragmentDietas está en el índice 2
-        fragmentArrayList.add(new FragmentCalorias()); // Cambiado el orden, ahora FragmentCalorias está en el índice 3
         fragmentArrayList.add(new FragmentRutinas());
 
         AdapterViewPager adapterViewPager = new AdapterViewPager(this, fragmentArrayList);
@@ -49,8 +48,6 @@ public class HomePage extends AppCompatActivity {
                     bottomNav.setSelectedItemId(R.id.itPerfil);
                 } else if (position == 2) {
                     bottomNav.setSelectedItemId(R.id.itDietas);
-                } else if (position == 3) {
-                    bottomNav.setSelectedItemId(R.id.itCalorias);
                 } else if (position == 4) {
                     bottomNav.setSelectedItemId(R.id.itRutinas);
                 }
@@ -66,8 +63,6 @@ public class HomePage extends AppCompatActivity {
                     pagerMain.setCurrentItem(1);
                 } else if (item.getItemId() == R.id.itDietas) {
                     pagerMain.setCurrentItem(2);
-                } else if (item.getItemId() == R.id.itCalorias) {
-                    pagerMain.setCurrentItem(3);
                 } else if (item.getItemId() == R.id.itRutinas) {
                     pagerMain.setCurrentItem(4);
                 }

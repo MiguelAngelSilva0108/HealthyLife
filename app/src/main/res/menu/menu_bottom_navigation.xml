@@ -16,11 +16,7 @@
         android:title="Inicio"
         app:showAsAction="ifRoom"
         android:icon="@drawable/baseline_home_24" />
-    <item
-        android:id="@+id/itCalorias"
-        android:title="Calorías"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/baseline_flatware_24" />
+
 
     <item
         android:id="@+id/itRutinas"

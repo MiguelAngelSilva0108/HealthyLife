@@ -29,6 +29,8 @@ class FragmentPerfil : Fragment() {
         correoUsuarioTextView = view.findViewById(R.id.correousuario)
         val signOutButton: Button = view.findViewById(R.id.signOutButton)
         val spinnerOpciones: Spinner = view.findViewById(R.id.spinnerOpciones)
+        val spinnerActividad: Spinner = view.findViewById(R.id.spinnerActividad)
+        val spinnerSexo: Spinner = view.findViewById(R.id.spinnerSexo)
 
         firebaseAuth = FirebaseAuth.getInstance()
         val currentUser = firebaseAuth.currentUser
@@ -44,19 +46,43 @@ class FragmentPerfil : Fragment() {
             requireActivity().finish() // Opcionalmente, finalizar la actividad actual
         }
 
-        // Crear una lista de opciones para el Spinner
+        // Crear una lista de opciones para el Spinner de objetivos
         val opciones = listOf("Perder Peso", "Ganar peso")
 
         // Crear un ArrayAdapter usando la lista de opciones y un diseño predeterminado
-        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, opciones)
+        val adapterOpciones = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, opciones)
 
         // Especificar el diseño que se usará cuando se desplieguen las opciones
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapterOpciones.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
-        // Establecer el adaptador en el Spinner
-        spinnerOpciones.adapter = adapter
+        // Establecer el adaptador en el Spinner de objetivos
+        spinnerOpciones.adapter = adapterOpciones
 
-        // Manejar el evento de selección del Spinner
+        // Crear una lista de opciones para el Spinner de actividad
+        val actividades = listOf("Sedentario", "Actividad Baja", "Activo", "Muy Activo")
+
+        // Crear un ArrayAdapter usando la lista de opciones y un diseño predeterminado
+        val adapterActividad = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, actividades)
+
+        // Especificar el diseño que se usará cuando se desplieguen las opciones
+        adapterActividad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        // Establecer el adaptador en el Spinner de actividad
+        spinnerActividad.adapter = adapterActividad
+
+        // Crear una lista de opciones para el Spinner de sexo
+        val sexos = listOf("Mujer", "Hombre")
+
+        // Crear un ArrayAdapter usando la lista de opciones y un diseño predeterminado
+        val adapterSexo = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, sexos)
+
+        // Especificar el diseño que se usará cuando se desplieguen las opciones
+        adapterSexo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        // Establecer el adaptador en el Spinner de sexo
+        spinnerSexo.adapter = adapterSexo
+
+        // Manejar el evento de selección del Spinner de objetivos
         spinnerOpciones.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val opcionSeleccionada = opciones[position]
@@ -65,6 +91,30 @@ class FragmentPerfil : Fragment() {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 // Manejar el caso en el que no se seleccione ninguna opción
+            }
+        }
+
+        // Manejar el evento de selección del Spinner de actividad
+        spinnerActividad.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val actividadSeleccionada = actividades[position]
+                // Aquí puedes realizar las acciones necesarias según la opción seleccionada
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // Manejar el caso en el que no se seleccione ninguna opción
+            }
+        }
+
+        // Manejar el evento de selección del Spinner de sexo
+        spinnerSexo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val sexoSeleccionado = sexos[position]
+                // Aquí puedes realizar las acciones necesarias según el sexo seleccionado
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // Manejar el caso en el que no se seleccione ningún sexo
             }
         }
 

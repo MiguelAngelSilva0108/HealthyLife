@@ -60,8 +60,8 @@ class WelcomeActivity : AppCompatActivity() {
 
     private fun postToList() {
         addToList("Healthylife", "Conoce nuestra app y empieza a tener una vida saludable", R.drawable.logo)
-        addToList("Control de peso", "Lleva un control de tu progreso y recibe recordatorios de pesarte", R.drawable.bascula)
-        addToList("Control de calorias", "Analiza los alimentos que consumes y lleva un conteo de calorías de acuerdo a tus objetivos", R.drawable.calorias)
+        addToList("Control de peso", "Te mostramos dietas que te ayudarán a controlar tu peso, dependiendo de tus objetivos", R.drawable.bascula)
+        addToList("Control de calorias", "Analiza los alimentos que te harán estar en déficit o superhábit calórico", R.drawable.calorias)
         addToList("Dietas", "Te sugeriremos dietas de acuerdo a tu actividad física y preferencias", R.drawable.dieta)
         addToList("Sugerencias de rutinas", "Organiza tus rutinas de entrenamiento y hazlo un hábito", R.drawable.musculo)
         addToList("Comienza hoy", "No esperes más, regístrate y ten el cuerpo que siempre has deseado", R.drawable.objetivos)
