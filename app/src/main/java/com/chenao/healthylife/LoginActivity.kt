@@ -13,6 +13,7 @@ import com.chenao.healthylife.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import android.util.Patterns
 import android.view.View
+import com.google.firebase.firestore.FirebaseFirestore
 
 class LoginActivity : AppCompatActivity() {
 
@@ -47,6 +48,7 @@ class LoginActivity : AppCompatActivity() {
 
             firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
+                    checkUserFieldsExistence()
                     val intent = Intent(this, HomePage::class.java)
                     startActivity(intent)
                     finish() // Opcionalmente, puedes finalizar la actividad actual para que no se pueda volver a la pantalla de inicio de sesión presionando el botón "Atrás".
@@ -84,6 +86,33 @@ class LoginActivity : AppCompatActivity() {
         binding.signupRedirectText.setOnClickListener {
             val signupIntent = Intent(this, SignupActivity::class.java)
             startActivity(signupIntent)
+        }
+    }
+
+    private fun checkUserFieldsExistence() {
+        val uid = firebaseAuth.currentUser?.uid
+        val firestore = FirebaseFirestore.getInstance()
+
+        uid?.let {
+            firestore.collection("usuarios").document(it).get().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val document = task.result
+                    if (document != null && document.exists()) {
+                        // Los campos existen, ir a la actividad principal
+                        val intent = Intent(this, HomePage::class.java)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        // Los campos no existen, ir a la actividad de formulario
+                        val intent = Intent(this, FormActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }
+                } else {
+                    // Error al obtener los datos del usuario
+                    Toast.makeText(this, "Error al obtener los datos del usuario", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
     }
 

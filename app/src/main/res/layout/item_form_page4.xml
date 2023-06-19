@@ -13,121 +13,149 @@
         android:textColor="#000000"
         android:textSize="30sp" />
 
-    <LinearLayout
-        android:id="@+id/layoutSedentario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvTitle"
-        android:background="@drawable/green_bordersolid"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="20dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="110dp">
 
-        <RadioButton
-            android:id="@+id/Sedentario"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sedentario"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="30dp"/>
+            android:orientation="vertical">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/SedentarioDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginBottom="15dp"
-            android:text="Las actividades diarias requieren un mínimo esfuerzo, como el reposo, el trabajo de escritorio o manejar un auto"
-            android:textSize="14sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutSedentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitle"
+                android:background="@drawable/green_bordersolid"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp">
 
-    <LinearLayout
-        android:id="@+id/layoutActividadBaja"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoutSedentario"
-        android:background="@drawable/green_bordersolid"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="20sp">
+                <RadioButton
+                    android:id="@+id/Sedentario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sedentario"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"/>
 
-        <RadioButton
-            android:id="@+id/ActividadBaja"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="30dp"
-            android:text="Actividad Baja"
-            android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/SedentarioDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Las actividades diarias requieren un mínimo esfuerzo, como el reposo, el trabajo de escritorio o manejar un auto"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/ActividadBajaDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginBottom="15dp"
-            android:text="Las actividades cotidianas requieren cierto esfuerzo, tales como periodos de pie, labores de hogar o un poco de ejercicio"
-            android:textSize="14sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutActividadBaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutSedentario"
+                android:background="@drawable/green_bordersolid"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20sp">
 
-    <LinearLayout
-        android:id="@+id/layoutActivo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoutActividadBaja"
-        android:background="@drawable/green_bordersolid"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="20dp">
+                <RadioButton
+                    android:id="@+id/ActividadBaja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:text="Actividad Baja"
+                    android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/Activo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Activo"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="30dp"/>
+                <TextView
+                    android:id="@+id/ActividadBajaDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Las actividades cotidianas requieren cierto esfuerzo, tales como periodos de pie, labores de hogar o un poco de ejercicio"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/ActivoDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginBottom="15dp"
-            android:text="Las actividades diarias requieren un esfuerzo razonable, como permanecer de pie, el trabajo físico o el ejercicio moderado regular"
-            android:textSize="14sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutActivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutActividadBaja"
+                android:background="@drawable/green_bordersolid"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp">
 
-    <LinearLayout
-        android:id="@+id/layoutMuyActivo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoutActivo"
-        android:background="@drawable/green_bordersolid"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="20dp">
+                <RadioButton
+                    android:id="@+id/Activo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activo"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"/>
 
-        <RadioButton
-            android:id="@+id/MuyActivo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Muy Activo"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="30dp"
-            />
+                <TextView
+                    android:id="@+id/ActivoDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Las actividades diarias requieren un esfuerzo razonable, como permanecer de pie, el trabajo físico o el ejercicio moderado regular"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/MuyActivoDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Las actividades diarias requieren un esfuerzo físico intenso, como la construcción o el ejercicio vigoroso regular"
-            android:textSize="14sp"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginBottom="15dp"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutMuyActivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutActivo"
+                android:background="@drawable/green_bordersolid"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/MuyActivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muy Activo"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/MuyActivoDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Las actividades diarias requieren un esfuerzo físico intenso, como la construcción o el ejercicio vigoroso regular"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_marginBottom="15dp"/>
+            </LinearLayout>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
 
 </RelativeLayout>

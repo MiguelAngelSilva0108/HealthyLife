@@ -23,11 +23,12 @@
 
         <RadioButton
             android:id="@+id/radioMujer"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:button="@null"
             android:drawableTop="@drawable/baseline_woman_24"
             android:text="Mujer"
+            android:textSize="30dp"
+            android:layout_marginTop="80dp"
             android:textColor="@color/white"
             android:background="@color/green"
             android:layout_marginHorizontal="10dp"
@@ -35,11 +36,11 @@
 
         <RadioButton
             android:id="@+id/radioHombre"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:button="@null"
             android:drawableTop="@drawable/baseline_man_24"
             android:text="Hombre"
+            android:textSize="30dp"
             android:textColor="@color/white"
             android:background="@color/green"
             android:layout_marginHorizontal="10dp"

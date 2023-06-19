@@ -28,12 +28,12 @@
         android:textSize="18dp" />
 
     <EditText
-        android:id="@+id/Peso"
-        android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:id="@+id/PesoObjetivo"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
         android:layout_below="@+id/tvAbout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
         android:inputType="numberSigned"
         android:background="@drawable/green_border"/>
 
@@ -42,8 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvAbout"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="55dp"
-        android:layout_toEndOf="@+id/Peso"
+        android:layout_marginTop="115dp"
+        android:layout_toEndOf="@+id/PesoObjetivo"
         android:text="Kg"
         android:textSize="20dp"
         android:textColor="@color/black"/>

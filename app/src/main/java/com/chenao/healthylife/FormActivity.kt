@@ -2,6 +2,7 @@ package com.chenao.healthylife
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -20,6 +21,31 @@ class FormActivity : AppCompatActivity() {
         setContentView(R.layout.activity_form)
 
         viewPager = findViewById(R.id.view_pager2)
+
+        val btnFakeSwipe = findViewById<Button>(R.id.btn_fake_swipe)
+        val btnVolver = findViewById<Button>(R.id.btn_volver)
+        btnVolver.alpha = 0f // Establecer la opacidad inicialmente en 0 (invisible)
+        btnFakeSwipe.setOnClickListener {
+            val currentItem = viewPager.currentItem
+            if (currentItem < formList.size - 1) {
+                viewPager.setCurrentItem(currentItem + 1, true)
+
+                if (currentItem == 0) {
+                    btnVolver.animate().alpha(1f).duration = 300 // Mostrar el botón "Volver"
+                }
+            } else {
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            }
+        }
+
+// Agregar listener al botón "Volver"
+        btnVolver.setOnClickListener {
+            if (viewPager.currentItem > 0) {
+                viewPager.setCurrentItem(viewPager.currentItem - 1, true)
+            }
+        }
+
 
         // Agrega los diseños de formulario a la lista
         formList.add(R.layout.item_form_page)
